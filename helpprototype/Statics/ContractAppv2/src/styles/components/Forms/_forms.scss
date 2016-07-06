@@ -1,0 +1,45 @@
+@import './../../variables';
+
+.InputWrap {
+
+  .Input {
+    font-family: $font-roman;
+    font-size: .875em;
+
+    @include breakpoint(map-get($breakpoints, medium)) {
+      font-size: 1.25em;
+    }
+
+    &--hasIcon {
+      margin-left: .5em;
+    }
+  }
+  input[type='text'] {
+    border: 0;
+    padding: .25em;
+    border-bottom: 1px solid #222;
+  }
+}
+
+.Checklist {
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+
+  @include breakpoint(map-get($breakpoints, medium)) {
+    font-size: 1.5em;
+  }
+
+  li {
+
+    &:before {
+      content: '✓';
+      margin-right: .5em;
+    }
+
+    span {
+      text-align: left;
+    }
+  }
+}

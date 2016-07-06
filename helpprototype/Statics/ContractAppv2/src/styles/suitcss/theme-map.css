@@ -1,0 +1,7 @@
+@custom-media --sm-viewport (min-width:320px) and (max-width:800px);
+@custom-media --md-viewport (min-width:800px) and (max-width:1200px);
+@custom-media --lg-viewport (min-width:1200px);
+
+:root {
+  --space-large-px: 20px;
+}

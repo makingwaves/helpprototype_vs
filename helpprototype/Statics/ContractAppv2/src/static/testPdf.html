@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>React Redux Starter Kit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .PdfPage {
+      padding: 2rem;
+      font-family: "Times New Roman", serif;
+    }
+
+    h1, h2, h3, h4 {
+      text-transform: uppercase;
+    }
+
+    .PdfPage--sectionHeader {
+
+    }
+
+    body {
+      counter-reset: h2counter;
+    }
+    h1 {
+      counter-reset: h2counter;
+    }
+    h2:before {
+      content: counter(h2counter) ".\0000a0\0000a0";
+      counter-increment: h2counter;
+      counter-reset: h3counter;
+    }
+    h3:before {
+      content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+      counter-increment: h3counter;
+    }
+  </style>
+</head>
+<body>
+  <div class="PdfPage">
+    <h1>Samboeravtale</h1>
+    <p>De undertegnede parter:</p>
+    <p>Samboer 1 sitt navn: XX, fødselsnummer: 00000 12345</p>
+    <p>Samboer 2 sitt navn: YY, fødselsnummer: 00000 12345</p>
+    <p>etablerte ugift samliv i mai 1985 (startdato).</p>
+    <p>Vi har i dag inngått følgende avtale i anledning samlivet:</p>
+
+    <h2 class="PdfPage-sectionHeader">Eneeie</h2>
+    <p>Det hver av partene eier i dag, og i fremtiden erverver ved inntekt, gave,
+      arv eller på annen måte, skal vedkommende eie alene og ha full rådighet over (eneeie).
+      Eiendeler (surrogater) som trer i stedet for eiendeler som tilhører partenes eneeie,
+      skal også være eneeie. </p>
+    <p>Blir samlivet mellom partene oppløst, har hver av partene rett til å
+      bringe sitt eneeie med seg udelt ut av samlivet.</p>
+    <h3>XX sitt eneeie er som følger:</h3>
+    <ul>
+      <li>Fritidseiendom i Lardal kommune, gnr 0, bnr 0.</li>
+      <li>Bankkonti, aksjer og verdipapirer m.v. lydende på hans navn.</li>
+    </ul>
+    <h3>YY sitt eneeie er som følger:</h3>
+    <ul>
+      <li>Fritidseiendom i Lardal kommune, gnr 0, bnr 0.</li>
+      <li>Bankkonti, aksjer og verdipapirer m.v. lydende på hans navn.</li>
+    </ul>
+    <p>Partenes eneeie kan angis nærmere på vedlegg 1 til denne avtale.</p>
+    <h2>Sameie</h2>
+  </div>
+</body>
+</html>

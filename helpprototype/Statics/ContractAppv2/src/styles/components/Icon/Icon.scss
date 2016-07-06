@@ -1,0 +1,70 @@
+@import './../../variables';
+
+.Colors--teal {
+  background-color: $light-teal !important;
+}
+.Colors--darkGreen {
+  background-color: $dark-green !important;
+}
+
+.Icon {
+
+  &-slot {
+    display: inline-block;
+    background: $dark-blue;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    font-size: 1.5em;
+
+    > span {
+      color: $white;
+      font-family: $font-bold;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      user-select: none;
+    }
+
+    &--blank {
+      background: transparent;
+      border: 1px solid #2c2c2c;
+
+      > span {
+        color: #2c2c2c;
+        line-height: 2;
+      }
+    }
+
+    &--sm {
+      font-size: 1em;
+    }
+
+    &--md {
+      font-size: 1.5em;
+    }
+
+    &--lg {
+      font-size: 2em;
+    }
+    @include breakpoint(map-get($breakpoints, small-mid)) {
+      &--scaled {
+        font-size: 1.875em;
+      }
+    }
+
+    @include breakpoint(map-get($breakpoints, medium)) {
+      &--scaled {
+        font-size: 2.5em;
+      }
+    }
+
+    @include breakpoint(map-get($breakpoints, large)) {
+      &--scaled {
+        font-size: 3.5em;
+      }
+    }
+
+  }
+}

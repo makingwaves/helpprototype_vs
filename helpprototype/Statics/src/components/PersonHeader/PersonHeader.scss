@@ -1,0 +1,16 @@
+@import './../../styles/config';
+
+.PersonHeader {
+  background: $light-blue;
+  padding: 1em;
+  margin-bottom: 2em;
+
+  * {
+    color: $heading-color;
+    margin-bottom: 0;
+  }
+
+  .active & {
+    margin-bottom: 0;
+  }
+}

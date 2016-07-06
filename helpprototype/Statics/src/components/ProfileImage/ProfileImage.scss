@@ -1,0 +1,11 @@
+.ProfileImage {
+  border-radius: 50%;
+  background: no-repeat top center;
+  background-size: cover;
+
+  &--lg {
+    width: 8rem;
+    height: 8rem;
+    margin: 3rem auto 2rem;
+  }
+}

@@ -1,0 +1,60 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+
+$fallback-font: Arial, sans-serif;
+$font-light: 'Univers Pro 45 Light'$fallback-font;
+$font-normal: $font-light;
+$font-roman: 'Univers Pro 55 Roman', $fallback-font;
+$font-bold: 'Univers Pro 65 Bold', $fallback-font;
+$font-serif: 'Cardo', serif;
+
+$breakpoints: (
+  small: 320px,
+  small-mid: 400px,
+  small-high: 600px,
+  medium: 800px,
+  medium-mid: 900px,
+  medium-high: 960px,
+  large: 1200px
+);
+
+$breakpoint-sm: map-get($breakpoints, small) map-get($breakpoints, medium);
+$breakpoint-md: map-get($breakpoints, medium) map-get($breakpoints, large);
+$breakpoint-lg: map-get($breakpoints, large);
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+/* Breakpoints */
+$bp-xs: 480px !default;
+$bp-sm: 768px !default;
+$bp-md: 992px !default;
+$bp-lg: 1200px !default;
+
+/* Spacing */
+$spacing-default: 1rem !default;
+$spacing-bottom: $spacing-default !default;
+
+/* Colors */
+// brands
+$cloud-blue: #e0f0f5 !default;
+$light-blue: #cce7ef !default;
+$dark-blue: #00373d !default;
+$dark-green: #00737F !default;
+$cloud-green: #dbe7be !default;
+$light-green: #dbe7be !default;
+$cloud-red: #fdd7d0 !default;
+$light-red: #fdd7d0 !default;
+$cloud-yellow: #fff9ed !default;
+$light-teal: #12a8b8 !default;
+$primary-color: $dark-blue !default;
+$gradient: linear-gradient(to bottom, rgba($light-blue,1) 0%,rgba(#b3d1da,1) 100%);
+$body-bg: $gradient !default;
+
+// accents
+$white: #fff !default;
+$gray-darker: #363535 !default;
+$gray-dark: #888 !default;
+$gray: #c6c4be !default;
+$gray-light: #ddd !default;
+$gray-lighter: #dedcd8 !default;

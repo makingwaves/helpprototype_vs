@@ -1,0 +1,31 @@
+@import './../config';
+
+.Arrow {
+  position: relative;
+
+  &:after {
+    top: 100%;
+    left: 50%;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border: 8px solid rgba(0, 0, 0, 0);
+    border-top-color: inherit;
+    margin-left: -8px;
+  }
+
+  &--lightBlue {
+    &:after {
+      border-top-color: $light-blue;
+    }
+  }
+
+  &--darkBlue {
+    &:after {
+      border-top-color: $dark-blue;
+    }
+  }
+}
+

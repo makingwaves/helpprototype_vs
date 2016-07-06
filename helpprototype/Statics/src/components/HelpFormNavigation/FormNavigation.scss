@@ -1,0 +1,42 @@
+@import './../../styles/config';
+
+.FormNavigation {
+  background: $white;
+  padding: 4rem 1rem 1rem;
+
+  ul {
+    color: $text-color;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      a {
+        color: $text-color;
+        text-decoration: none;
+        padding: 1rem;
+        padding-left: 1.5rem;
+        display: block;
+        transition: background 0.3s ease;
+
+        &.active {
+          color: $heading-color;
+          font-weight: 700;
+          border-left: 2px solid $light-green;
+        }
+
+        &:hover, &focus {
+
+          background: rgba(0,0,0,0.1875);
+        }
+      }
+
+      > ul {
+        padding-left: 1rem;
+        margin: 0;
+        list-style: none;
+
+      }
+    }
+  }
+}

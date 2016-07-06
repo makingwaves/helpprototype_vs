@@ -1,0 +1,23 @@
+@import './../../../styles/config';
+
+.Help-Text {
+  &[type=text],
+  &[type=number],
+  &[type=email],
+  &[type=tel]{
+    background: $input-bg;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $border-radius-base;
+    //box-shadow: inset 0 0 2px 2px #eee;
+    padding: $input-padding;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    line-height: inherit;
+    vertical-align: bottom;
+
+    &::-webkit-input-placeholder {
+      color: #888;
+    }
+  }
+}

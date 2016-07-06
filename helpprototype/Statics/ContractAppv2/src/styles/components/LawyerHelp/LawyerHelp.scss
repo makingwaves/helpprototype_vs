@@ -1,0 +1,31 @@
+@import './../../variables';
+
+.LawyerHelp {
+  border-radius: 50%;
+  background: $light-blue;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+  width: 5em;
+  height: 5em;
+  position: relative;
+  border: 1px solid $dark-blue;
+
+  &--middle {
+    margin: 0 auto;
+  }
+  &-name {
+    position: absolute;
+    top: .5em;
+    right: -2em;
+    background: $dark-blue;
+    color: $white;
+    font-size: 0.75em;
+    border-radius: .75em;
+    display: inline-block;
+    padding: .25em .75em;
+  }
+
+  @include breakpoint(map-get($breakpoints, medium)) {
+    width: 6.5em;
+    height: 6.5em;
+  }
+}

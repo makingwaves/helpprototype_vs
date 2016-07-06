@@ -1,0 +1,34 @@
+.u-marginLeft {
+  margin-left: 1em;
+
+  &--half {
+    margin-left: .5em;
+  }
+}
+
+.u-marginBottom {
+  margin-bottom: 1em;
+
+  &--half {
+    margin-bottom: .5em;
+  }
+}
+
+.u-marginRight {
+  margin-right: 1em;
+
+  &--half {
+    margin-right: .5em;
+  }
+}
+
+.u-marginTop {
+  margin-top: 1em;
+
+  &--half {
+    margin-top: .5em;
+  }
+  &--double {
+    margin-top: 2em;
+  }
+}

@@ -1,0 +1,36 @@
+@import './../../../styles/variables';
+
+.duck {
+  display: block;
+  width: 120px;
+  margin: 1.5rem auto;
+}
+.GridStack {
+
+  &-sm {
+
+    .Grid-cell {
+
+    }
+  }
+}
+
+.Chapters {
+
+}
+
+.Forms {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $white;
+  min-height: 35em;
+  width: 100%;
+
+  @include breakpoint(map-get($breakpoints, medium)) {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    background: transparent;
+  }
+}

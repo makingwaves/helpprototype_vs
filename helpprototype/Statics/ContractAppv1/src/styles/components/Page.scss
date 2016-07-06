@@ -1,0 +1,41 @@
+@import './../config';
+
+.Page {
+
+  &-header {
+    height: 20rem;
+    background: $dark-blue;
+  }
+  &-title {
+    color: $white;
+    margin-bottom: 0.5em;
+    padding-left: 5rem;
+  }
+  &-intro {
+    margin: 0;
+
+  }
+  &-logo {
+    height: 100%;
+    padding: 0 2.5rem;
+    background: rgba(255,255,255,0.05);
+    h4 {
+      color: $white;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $white;
+      margin: 0
+    }
+  }
+}
+
+.FullHeight {
+  height: 100%;
+}
+
+#FormContainer {
+  margin-bottom: 28rem;
+}
